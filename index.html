@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">R.D Industries</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Contact Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <button onclick="performSearch()">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section with Cover Image and Explore Button -->
+    <section id="home" class="home-section">
+        <div class="cover-image">
+            <div class="overlay">
+                <h1>Welcome to IndustryCo</h1>
+                <p>Your partner in industrial innovation.</p>
+                <a href="#services" class="explore-button">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section" style="display: flex; flex-direction: row;">
+        <div style="margin: 40px; margin-top: 0;">
+            <h2>Our Services</h2>    
+            <p style="font-weight: 700;">At R.D. Industry, we specialize in delivering high-quality steel and stainless steel fabrication solutions to meet all your residential, commercial, and industrial needs. With a commitment to craftsmanship and durability, we offer a wide range of services, including the manufacturing of steel windows, gates, roofing, rolling shutters, staircases, and custom stainless steel works. Our expertise extends to all types of fabrication work, ensuring precision, reliability, and aesthetic appeal in every project. Whether you're looking for robust security solutions or custom designs, R.D. Industry is your trusted partner for excellence in fabrication.</p>
+        </div>
+        <div>
+            <img src="images/residential-steel-construction.jpg" style="height: 400px; width: 600px; border-radius: 10px;">
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section" style="display: flex; flex-direction: row;">
+        <div>
+            <img src="images/pro.jpg" style="height: 300px; width: 200px;">
+        </div>
+        <div style="margin: 40px; margin-top: 0;">
+        <h2>About Us</h2>
+        <p style="font-weight: 700;">Founded in 2005 by V. Ravi Kumar, R.D. Industry has grown into a trusted name in steel and stainless steel fabrication, with over 30 years of hands-on experience in the field. Since our inception, we have proudly served more than 5,000 satisfied customers, consistently receiving positive feedback for the quality and reliability of our work. Our extensive expertise spans the manufacturing of steel windows, gates, roofing, rolling shutters, staircases, and all types of custom fabrication projects. At R.D. Industry, we are committed to excellence, delivering durable and aesthetically crafted solutions that meet the highest standards. R.D Industries has been serving the industrial market for over 25 years, delivering top-notch products and services.</p>
+    </div>    
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section" style="display: flex; flex-direction: row;">
+        <div style="margin: 40px;">
+            <h2>Contact Us</h2>
+        <p style="font-weight: 700;">If you need to enquire about our company, products, or services, feel free to reach out to us. Whether you're looking for detailed information about our fabrication work, need a custom solution, or want to discuss a project, we are here to assist you. Contact us today, and our team will be happy to provide you with the answers and support you need.</p>
+    </div>
+        <div style="float: right;">
+
+            <div class="form-container">
+                
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Phone Number</label>
+                        <input type="tel" id="number" name="number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Gallery Section with Cards -->
+    <section id="gallery" class="section gallery-section">
+        <h2>Our Gallery</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="images/gate.jpg" alt="Image 1">
+                <div class="card-content">
+                    <h3>Gates</h3>
+                    <p>Description of Project 1.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/roof.jpg" alt="Image 2">
+                <div class="card-content">
+                    <h3>Roofing</h3>
+                    <p>Description of Project 2.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/staris.jpg" alt="Image 3">
+                <div class="card-content">
+                    <h3>Stair Case</h3>
+                    <p>Description of Project 3.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Steel-shutter.jpg" alt="Image 4">
+                <div class="card-content">
+                    <h3>Rolling shutter</h3>
+                    <p>Description of Project 4.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/window raw.jpeg" alt="Image 5">
+                <div class="card-content">
+                    <h3>Windows</h3>
+                    <p>Description of Project 5.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/remote.jpg" alt="Image 6">
+                <div class="card-content">
+                    <h3>Remote gate</h3>
+                    <p>Description of Project 6.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IndustryCo. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
